@@ -1,9 +1,9 @@
 # Coolpix!
 
-Coolpix is an open source platform for creating photo-sharing site that allows its users to share pictures on the app, as well as through a variety of other social networking platforms, such as Facebook, Twitter, Tumblr, and etc.
+Vid is an open source platform for creating video-sharing site that allows its users to share video on the app, as well as through a variety of other social networking platforms, such as Facebook, Twitter, Tumblr, and etc.
 It's like 9gag.com :)
 
-![Coolpics! Screenshot](https://raw.githubusercontent.com/omkz/coolpics/master/public/screenshot.png)
+![vid! Screenshot](https://raw.githubusercontent.com/omkz/coolpics/master/public/screenshot.png)
 
 ## Tech Stack
 
@@ -36,7 +36,7 @@ Before you get started, the following needs to be installed:
 
   ```bash
   git clone git://github.com/omkz/coolpics.git
-  cd coolpics
+  cd vid
   ```
 
 1. Install the required gems by running the following command in the project root directory:
@@ -48,7 +48,7 @@ Before you get started, the following needs to be installed:
 1. Create and initialize the database:
 
   ```bash
-  bundle exec rake db:migrate
+  bundle exec rails db:migrate
   ```
 
 1. Start the development server:
@@ -68,4 +68,4 @@ The best way to contribute is to do one of the following :
 
 ## License
 
-Coolpics is open source under the MIT license. See [LICENSE](LICENSE) for details.
+Vid is open source under the MIT license. See [LICENSE](LICENSE) for details.
