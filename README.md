@@ -1,4 +1,4 @@
-# Coolpix!
+# /Vid
 
 Vid is an open source platform for creating video-sharing site that allows its users to share video on the app, as well as through a variety of other social networking platforms, such as Facebook, Twitter, Tumblr, and etc.
 It's like 9gag.com :)
