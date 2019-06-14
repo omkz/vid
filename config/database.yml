@@ -7,16 +7,16 @@ default: &default
 
 development:
   <<: *default
-  database: social_development
+  database: vid_development
 
   
 test:
   <<: *default
-  database: social_test
+  database: vid_test
 
 
 production:
   <<: *default
-  database: social_production
+  database: vid_production
   username: social
-  password: <%= ENV['SOCIAL_DATABASE_PASSWORD'] %>
+  password: <%= ENV['VID_DATABASE_PASSWORD'] %>
