@@ -7,10 +7,11 @@ It's like 9gag.com :)
 
 ## Tech Stack
 
-- Ruby 2.5.1  
+- Ruby 2.5.5 
 - Ruby on Rails 5.2.1  
-- PostgreSQL 9.5
+- PostgreSQL 9.6
 - jQuery
+- Twitter Boostrap 3
 - Gem: 
     -  [devise](https://github.com/plataformatec/devise) | Authenticatio
     -  [pg](https://github.com/ged/ruby-pg) | PostgreSQL library for Ruby
@@ -21,7 +22,7 @@ It's like 9gag.com :)
 ### Requirements
 
 Before you get started, the following needs to be installed:
-  * **Ruby**. Version 2.5.1 is currently used and we don't guarantee everything works with other versions. If you need multiple versions of Ruby, [rbenv](https://rbenv.org) is recommended.
+  * **Ruby**. Version 2.5.5 is currently used and we don't guarantee everything works with other versions. If you need multiple versions of Ruby, [rbenv](https://rbenv.org) is recommended.
   * [**RubyGems**](http://rubygems.org/)
   * **Bundler**: `gem install bundler`
   * [**Git**](http://help.github.com/git-installation-redirect)
@@ -35,7 +36,7 @@ Before you get started, the following needs to be installed:
 1. Get the code. Clone this git repository:
 
   ```bash
-  git clone git://github.com/omkz/coolpics.git
+  git clone git://github.com/omkz/vid.git
   cd vid
   ```
 
@@ -56,6 +57,16 @@ Before you get started, the following needs to be installed:
   ```bash
   rails s
   ```
+### Setting up the development environment (BETA)
+
+Our docker implementation is incomplete and may not work smoothly. Please kindly report any issues and any contribution is welcomed!
+
+1. Install `docker` and `docker-compose`
+1. `git clone git@github.com:omkz/vid.git`
+1. run `docker-compose build`
+1. run `docker-compose run web rails db:setup`
+1. run `docker-compose up`
+1. That's it! Navigate to `localhost:3000`
 
 ## If you want to contribute
 
