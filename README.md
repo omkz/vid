@@ -57,7 +57,7 @@ Before you get started, the following needs to be installed:
   ```bash
   rails s
   ```
-### Setting up the development environment (BETA)
+### Setting up the development environment using Docker (BETA)
 
 Our docker implementation is incomplete and may not work smoothly. Please kindly report any issues and any contribution is welcomed!
 
