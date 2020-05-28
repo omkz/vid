@@ -42,28 +42,17 @@ class User < ApplicationRecord
     end
   end
 
-  #omenk.follow(paijo)
-  #relationship.create()
-  # Follows a user.
   def follow(other_user)
     active_relationships.create(followed_id: other_user.id)
-    # notify(recipent, 'follow')
   end
 
-  # Unfollows a user.
   def unfollow(other_user)
     active_relationships.find_by(followed_id: other_user.id).destroy
-    # notify(recipent, 'unfollow')
   end
 
-  # Returns true if the current user is following the other user.
   def following?(other_user)
     following.include?(other_user)
   end
-
-  # def notify(recipent, message)
-  #   Notification.create(recipent_id: 1, sender_id: current_user, message: "A #{message} ki has been created", is_read: false)
-  # end
 
   class << self
     def authenticate(email, password)
