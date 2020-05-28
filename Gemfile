@@ -14,7 +14,7 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'factory_girl_rails'
+  gem "factory_bot_rails"
   gem 'dotenv-rails'
 end
 

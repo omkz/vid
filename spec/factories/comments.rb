@@ -1,6 +1,6 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :comment do
-    body "MyText"
+    body {"My Body"}
     post nil
     user nil
   end
