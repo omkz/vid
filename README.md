@@ -12,7 +12,7 @@ Vid is an open source platform for creating video-sharing site that allows its u
 - jQuery
 - Twitter Boostrap 3
 - Gem: 
-    -  [devise](https://github.com/plataformatec/devise) | Authenticatio
+    -  [devise](https://github.com/plataformatec/devise) | Authentication
     -  [pg](https://github.com/ged/ruby-pg) | PostgreSQL library for Ruby
     -  [carrierwave](https://github.com/carrierwaveuploader/carrierwave) | Image upload management
 
