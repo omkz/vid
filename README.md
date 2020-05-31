@@ -14,7 +14,7 @@ Vid is an open source platform for creating video-sharing site that allows its u
 - Gem: 
     -  [devise](https://github.com/plataformatec/devise) | Authentication
     -  [pg](https://github.com/ged/ruby-pg) | PostgreSQL library for Ruby
-    -  [carrierwave](https://github.com/carrierwaveuploader/carrierwave) | Image upload management
+    -  [carrierwave](https://github.com/carrierwaveuploader/carrierwave) | Video upload management
 
 ## Installation
 
@@ -29,6 +29,10 @@ Before you get started, the following needs to be installed:
   * [**Redis**](http://redis.io). Version 4.0.9 has been used successfully, but newer versions should work as well. If you're using OS X and have Homebrew installed, install it with `brew install redis`
   * [**elasticsearch**] (https://www.elastic.co/products/elasticsearch). If you're using OS X and have Homebrew installed, install it with `brew install elasticsearch`
   * [**Imagemagick**](http://www.imagemagick.org). If you're using OS X and have Homebrew installed, install it with `brew install imagemagick`
+  * [**ffmpeg**](https://ffmpeg.org/). If you're using OS X and have Homebrew installed, install it with `brew install ffmpeg`
+  * [**ffmpegthumbnailer**](https://github.com/dirkvdb/ffmpegthumbnailer). If you're using OS X and have Homebrew installed, install it with `brew install ffmpegthumbnailer`
+
+
   
 ### Setting up the development environment
 
