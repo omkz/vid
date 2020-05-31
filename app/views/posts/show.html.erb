@@ -19,8 +19,7 @@
     </h3>
 
     <p>
-      
-      <%= video_tag @post.image_url.to_s, :controls =>true %>
+      <%= video_tag @post.image_url.to_s, controls: true %>
     </p>
 
     <div class="like" id="<%= @post.id %>">
