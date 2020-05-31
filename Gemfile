@@ -10,6 +10,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'mini_magick'
+gem 'carrierwave'
+gem 'carrierwave-ffmpeg'
+gem 'carrierwave-video'
+gem 'carrierwave-video-thumbnailer'
+gem 'cloudinary'
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
@@ -34,9 +41,6 @@ end
 
 gem 'bootstrap-sass'
 gem 'devise'
-gem 'carrierwave'
-gem 'cloudinary'
-gem 'mini_magick'
 gem 'acts_as_votable'
 gem 'font-awesome-rails'
 gem 'kaminari'

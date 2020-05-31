@@ -19,7 +19,8 @@
     </h3>
 
     <p>
-      <%= image_tag(@post.image_url, class: 'img-responsive') if @post.image? %>
+      
+      <%= video_tag @post.image_url.to_s, :controls =>true %>
     </p>
 
     <div class="like" id="<%= @post.id %>">

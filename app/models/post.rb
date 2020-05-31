@@ -11,7 +11,7 @@ class Post < ApplicationRecord
   
   acts_as_votable
 
-  mount_uploader :image, PictureUploader
+  mount_uploader :image, VideoUploader
 
   friendly_id :title, use: :slugged
 

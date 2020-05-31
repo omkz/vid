@@ -19,7 +19,8 @@
            </div>
            <h3><%= post.title %></h3>
            <p>
-             <%= link_to_image(post.image_url, post,  data: { turbolinks: 'false' } ) %>
+             <%# link_to_image(post.image_url, post,  data: { turbolinks: 'false' } ) %>
+             <%= video_tag post.image_url.to_s, :controls =>true %>
            </p>
    
    
