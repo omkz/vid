@@ -8,7 +8,8 @@
    </span>
    <hr />
     <p>
-      <%= link_to_image(post.image_url, post, data: { turbolinks: 'false' }, size: '256x256') %>
+      <%# link_to_image(post.image_url, post, data: { turbolinks: 'false' }, size: '256x256') %>
+      <%= video_tag post.image_url.to_s, controls: true %>
     </p>
   </span>
 
