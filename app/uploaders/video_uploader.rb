@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class VideoUploader < CarrierWave::Uploader::Base
+  include Cloudinary::CarrierWave
   include CarrierWave::MiniMagick
   include CarrierWave::Video
   include CarrierWave::Video::Thumbnailer
