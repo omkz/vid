@@ -58,5 +58,7 @@ gem 'active_model_serializers'
 gem 'doorkeeper'
 gem 'swagger-docs'
 gem 'rack-cors', :require => 'rack/cors'
-gem 'webpacker', '~> 3.5'
+# gem 'webpacker', '~> 3.5'
+gem 'webpacker', '~> 5.x'
+
 
