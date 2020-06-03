@@ -5,6 +5,7 @@ class VideoUploader < CarrierWave::Uploader::Base
   include CarrierWave::Video
   include CarrierWave::Video::Thumbnailer
   include CarrierWave::FFmpeg
+  include ::CarrierWave::Backgrounder::Delay
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:

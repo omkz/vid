@@ -12,6 +12,7 @@ class Post < ApplicationRecord
   acts_as_votable
 
   mount_uploader :image, VideoUploader
+  process_in_background :image
 
   friendly_id :title, use: :slugged
 

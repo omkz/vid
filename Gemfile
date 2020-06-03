@@ -12,10 +12,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'mini_magick'
 gem 'carrierwave'
+gem 'carrierwave_backgrounder', git: "git://github.com/omkz/carrierwave_backgrounder"
 gem 'carrierwave-ffmpeg'
 gem 'carrierwave-video'
 gem 'carrierwave-video-thumbnailer'
 gem 'cloudinary'
+gem 'sidekiq'
 
 group :development, :test do
   gem 'byebug'
