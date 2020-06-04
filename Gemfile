@@ -18,6 +18,7 @@ gem 'carrierwave-video'
 gem 'carrierwave-video-thumbnailer'
 gem 'cloudinary'
 gem 'sidekiq'
+gem "pundit"
 
 group :development, :test do
   gem 'byebug'
