@@ -8,9 +8,11 @@
    </span>
    <hr />
     <p>
-      <%# link_to_image(post.image_url, post, data: { turbolinks: 'false' }, size: '256x256') %>
       <%= video_tag post.image_url.to_s, controls: true %>
     </p>
+    <%= link_to 'Show', post, data: { turbolinks: 'false' } %>
+    <%= link_to 'Edit', edit_post_path(post) %>
+    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
   </span>
 
 </div>
