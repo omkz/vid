@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::Base
-  before_action :meme_new
+  before_action :new_video
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  def meme_new
+  def new_video
     @video = Post.new
   end
 

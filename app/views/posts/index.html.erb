@@ -1,13 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Posts</h1>
+<h1>My Video</h1>
+<%= link_to 'New Post', new_post_path %>
 
 <table>
   <thead>
     <tr>
       <th>ID </th>
       <th>Title</th>
-      <th>Image</th>
+      <th>Video</th>
       <th>User</th>
       <th colspan="3"></th>
     </tr>
@@ -18,7 +19,7 @@
       <tr>
         <td><%= post.id %></td>
         <td><%= post.title %></td>
-        <td><%= post.image %></td>
+        <td><%= video_tag post.image_url.to_s, controls: true %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+
