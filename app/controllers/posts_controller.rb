@@ -1,11 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:edit, :update, :destroy]
   before_action :authenticate_user!, only: [:create, :edit, :update, :destroy,:upvote]
-  # GET /posts
-  # GET /posts.json
-  def index
-    @posts = Post.where(user_id: current_user.id)
-  end
+
 
   # GET /posts/1
   # GET /posts/1.json
