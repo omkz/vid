@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def meme_new
-    @meme = Post.new
+    @video = Post.new
   end
 
 end
