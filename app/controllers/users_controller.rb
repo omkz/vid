@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @posts = current_user.posts.page(params[:page]).per(10)
+    @user = User.includes(:posts).find(params[:id])
+    @posts = @user.posts.page(params[:page]).per(10)
   end
 end
