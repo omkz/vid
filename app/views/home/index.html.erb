@@ -22,10 +22,10 @@
              <%= video_tag post.image_url.to_s, controls: true %>
            </p>
    
-           <div class="like" id="<%= post.id %>">
+           <div class="section-action" id="<%= post.id %>">
              <%= render partial: 'likes/form', locals: {:@post => post} %>
            </div>
-           <%= link_to "comments", @post, class: 'btn btn-info', data: { turbolinks: 'false' } %>
+           <%= link_to "comments", @post, class: 'btn btn-primary', data: { turbolinks: 'false' } %>
           
            <%= link_to "https://www.facebook.com/sharer/sharer.php?u=#{request.original_url}", class: "btn btn--fb", title: 'Share on Facebook', target: '_blank'  do %>
              <i class="fa fa-facebook fa-fw"></i>Facebook

@@ -135,14 +135,24 @@ h6 {
   background-color: deepskyblue !important;
 }
 
-/* Black buttons with extra padding and without rounded borders */
+.section-action {
+  display: inline;
+}
+
 .btn {
   padding: 10px 20px;
-  background-color: #351203;
   border-radius: 0;
   transition: 0.2s;
   border: none;
   color: white;
+}
+
+.btn-primary{
+  background-color: #351203;
+}
+
+.btn-liked {
+  color: deepskyblue;
 }
 
 .btn--fb {
