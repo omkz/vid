@@ -22,7 +22,7 @@
       <%= video_tag @post.image_url.to_s, controls: true %>
     </p>
 
-    <div class="like" id="<%= @post.id %>">
+    <div class="section-action" id="<%= @post.id %>">
       <%= render partial: 'likes/form', locals: {:@post => @post} %>
     </div>
 
