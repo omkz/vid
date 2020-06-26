@@ -264,12 +264,12 @@ Devise.setup do |config|
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 
-  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET']
-             # scope: 'email,user_birthday', display: 'popup',
-             # display: 'popup',
-             # client_options: {
-             #     site: 'https://graph.facebook.com/v3.0',
-             #     authorize_url: "https://www.facebook.com/v3.0/dialog/oauth"
-             # }
+  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'],
+            #  scope: 'email,user_birthday', display: 'popup',
+            #  display: 'popup',
+             client_options: {
+              site: 'https://graph.facebook.com/v4.0',
+              authorize_url: "https://www.facebook.com/v4.0/dialog/oauth"
+             }
 
 end
