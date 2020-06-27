@@ -49,4 +49,6 @@ Rails.application.configure do
     Bullet.console = true
   end
 
+  config.cache_store = :redis_cache_store, { url: "redis://localhost:6379/0/cache" }
+
 end
