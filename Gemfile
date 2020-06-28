@@ -35,6 +35,8 @@ group :development do
   gem 'ruby-growl'
   gem 'bullet'
   gem 'brakeman'
+  gem "pry", "~> 0.13" # An IRB alternative and runtime developer console
+  gem "pry-rails", "~> 0.3" # Use Pry as your rails console
 end
 
 group :test do
