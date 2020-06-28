@@ -83,6 +83,10 @@ GEM
     acts_as_votable (0.12.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    airbrake (10.0.5)
+      airbrake-ruby (~> 4.13)
+    airbrake-ruby (4.15.0)
+      rbtree3 (~> 0.5)
     arbre (1.2.1)
       activesupport (>= 3.0.0)
     autoprefixer-rails (9.7.6)
@@ -304,6 +308,7 @@ GEM
       activesupport (>= 5.2.1)
       i18n
       polyamorous (= 2.3.2)
+    rbtree3 (0.6.0)
     rdoc (4.3.0)
     redis (4.1.4)
     regexp_parser (1.7.0)
@@ -413,6 +418,7 @@ DEPENDENCIES
   active_model_serializers
   activeadmin
   acts_as_votable
+  airbrake
   bootstrap-sass
   brakeman
   bullet
@@ -461,4 +467,4 @@ DEPENDENCIES
   webpacker (~> 5.x)
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
