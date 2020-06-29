@@ -55,6 +55,7 @@ gem 'omniauth-facebook'
 gem 'rack-mini-profiler'
 gem 'redis'
 gem 'hiredis'
+gem "redis-rails", "~> 5.0.2" # Redis for Ruby on Rails
 gem 'friendly_id'
 gem 'puma'
 gem 'activeadmin'
