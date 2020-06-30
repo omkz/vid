@@ -1,3 +1,2 @@
-web: bundle exec rails s
-worker: bundle exec sidekiq -t 25
-webpacker: ./bin/webpack-dev-server
+web: bundle exec puma -C config/puma.rb
+worker: bundle exec sidekiq -q carrierwave, 5 default
