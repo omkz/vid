@@ -20,6 +20,7 @@ gem 'cloudinary'
 gem 'sidekiq'
 gem "pundit"
 gem 'airbrake'
+gem 'honeybadger', '~> 4.0'
 
 group :development, :test do
   gem 'byebug'
