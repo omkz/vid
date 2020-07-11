@@ -21,6 +21,7 @@ gem 'sidekiq'
 gem "pundit"
 gem 'airbrake'
 gem 'honeybadger', '~> 4.0'
+gem "skylight"
 
 group :development, :test do
   gem 'byebug'
