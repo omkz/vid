@@ -22,6 +22,7 @@ gem "pundit"
 gem 'airbrake'
 gem 'honeybadger', '~> 4.0'
 gem "skylight"
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'byebug'
