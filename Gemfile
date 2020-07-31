@@ -62,6 +62,7 @@ gem "redis-rails", "~> 5.0.2" # Redis for Ruby on Rails
 gem 'friendly_id'
 gem 'puma'
 gem 'activeadmin'
+gem 'arctic_admin'
 gem 'active_model_serializers'
 gem 'doorkeeper'
 gem 'swagger-docs'
